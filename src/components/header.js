@@ -1,6 +1,6 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import NavLinks from './nav-links'
+import React from 'react';
+import Link from 'gatsby-link';
+import NavLinks from './nav-links';
 
 class Header extends React.Component {
   constructor(props) {

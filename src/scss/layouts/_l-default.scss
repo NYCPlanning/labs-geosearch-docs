@@ -133,6 +133,8 @@ $logo-height-medium: rem-calc(36);
 
   > .cell {
     box-shadow: 0 -4px 0 rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
 
     @include breakpoint(xlarge) {
       box-shadow: 4px 0 0 rgba(0,0,0,0.1);

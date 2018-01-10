@@ -2,13 +2,57 @@
 // Map Module
 // --------------------------------------------------
 
-.map {
+.mapboxgl-map {
   background-color: $medium-gray;
   height: 200px;
   min-height: 40vw;
+  z-index: 1;
 
   @include breakpoint(xlarge) {
     height: calc(100vh - 6rem);
   }
 
+}
+
+
+// Search (react-autosuggest)
+// --------------------------------------------------
+
+.search-form {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: auto;
+  left: 10px;
+  z-index: 2;
+
+  .clear-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    color: $dark-gray;
+  }
+}
+
+.react-autosuggest__input {
+  margin: 0;
+  padding-right: 2rem;
+  border-radius: 0;
+}
+
+.react-autosuggest__suggestions-container {
+  background-color: $light-gray;
+}
+
+.react-autosuggest__suggestions-list {
+  list-style: none;
+  margin: 0;
+}
+
+.react-autosuggest__suggestion {
+  padding: rem-calc(6) rem-calc(8);
+}
+
+.react-autosuggest__suggestion--highlighted {
+  background-color: $a11y-yellow;
 }

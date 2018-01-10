@@ -1,13 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
-import Helmet from 'react-helmet'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Link from 'gatsby-link';
+import Helmet from 'react-helmet';
 
-import Header from '../components/header'
-import Footer from '../components/footer'
-import Map from '../components/map'
+import Header from '../components/header';
+import Footer from '../components/footer';
+import Map from '../components/map';
 
-import '../scss/app.scss'
+import '../scss/app.scss';
 
 const TemplateWrapper = ({ children }) => (
   <div>

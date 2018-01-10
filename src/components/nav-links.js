@@ -6,18 +6,6 @@ const links = [
     text: 'About',
     url: '/about/',
   },
-  {
-    text: 'Projects',
-    url: '/projects/',
-  },
-  {
-    text: 'Process',
-    url: '/process/',
-  },
-  {
-    text: 'Contact',
-    url: '/contact/',
-  },
 ];
 
 const linksList = links.map((link) => {

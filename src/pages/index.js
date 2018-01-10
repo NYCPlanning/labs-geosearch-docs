@@ -1,17 +1,13 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import Hero from '../components/hero'
+import Map from '../components/map'
 
 class IndexPage extends React.Component {
   render() {
     return (
       <div className="main">
-        <Hero
-          tagline="We work with New York City's Urban Planners to deliver impactful, modern technology tools."
-          buttonText="Get in touch"
-          buttonURL="/contact/"
-          />
+        <Map />
 
         <div className="grid-container">
           <div className="grid-x grid-padding-x">

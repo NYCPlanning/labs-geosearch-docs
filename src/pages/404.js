@@ -1,14 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import Hero from '../components/hero'
+import Map from '../components/map'
 
 const NotFoundPage = () => (
   <div className="main">
-    <Hero
-      title="404"
-      tagline="Not Found"
-    />
+    <Map />
     <div className="grid-container">
       <div className="grid-x grid-padding-x">
         <div className="cell large-9">

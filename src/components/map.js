@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 
-class Hero extends React.Component {
+class Map extends React.Component {
  render() {
    const title = this.props.title ? <h1 className="header-large">{ this.props.title }</h1> : null;
 
@@ -18,7 +18,7 @@ class Hero extends React.Component {
      }
    }
 
-   return <div className="hero">
+   return <div className="map">
      <div className="grid-container">
        <div className="grid-x grid-padding-x">
          <div className="cell">
@@ -32,4 +32,4 @@ class Hero extends React.Component {
  }
 }
 
-export default Hero
+export default Map

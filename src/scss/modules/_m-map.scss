@@ -3,13 +3,12 @@
 // --------------------------------------------------
 
 .map {
-  background-color: $dcp-orange;
-  color: $white;
-  margin: $global-margin*-2 0 $global-margin*2;
-  padding: $global-margin*2 0;
+  background-color: $medium-gray;
+  height: 200px;
+  min-height: 40vw;
 
-  @include breakpoint(large) {
-    padding: 4vw 0;
+  @include breakpoint(xlarge) {
+    height: calc(100vh - 6rem);
   }
 
 }

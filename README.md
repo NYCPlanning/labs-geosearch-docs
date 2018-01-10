@@ -2,6 +2,8 @@
 
 [geosearch.planninglabs.nyc](https://geosearch.planninglabs.nyc/)
 
+NYC GeoSearch is an API that transforms input text — such as an address, or the name of a place — to a location in New York City using authoritative NYC address data from the [Property Address Directory (PAD)](https://www1.nyc.gov/site/planning/data-maps/open-data.page#pad) via [Pelias](https://github.com/pelias/pelias) (a modular, open-source geocoder built on top of ElasticSearch for fast geocoding). NYC GeoSearch powers the autocomplete/typeahead search results in web apps such as [ZoLa](https://github.com/NYCPlanning/labs-zola) and [Population Fact Finder](https://github.com/NYCPlanning/labs-nyc-factfinder). 
+
 ## How you can help
 
 In the spirit of free software, everyone is encouraged to help improve this project.  Here are some ways you can contribute.

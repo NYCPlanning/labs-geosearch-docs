@@ -3,10 +3,7 @@ import Link from 'gatsby-link';
 import ReactMapboxGl, { GeoJSONLayer } from 'react-mapbox-gl';
 import Search from './search';
 
-const MapboxGl = ReactMapboxGl({
-  accessToken: "pk.eyJ1IjoiY3dob25nbnljIiwiYSI6ImNpczF1MXdrdjA4MXcycXA4ZGtyN2x5YXIifQ.3HGyME8tBs6BnljzUVIt4Q"
-});
-
+let MapboxGl = null;
 
 class Map extends React.Component {
   constructor(props) {
@@ -18,8 +15,22 @@ class Map extends React.Component {
     };
   }
 
+  componentWillMount() {
+    // necessary so that gatsby build will work properly
+    if (typeof window !== `undefined`) {
+      MapboxGl = ReactMapboxGl({
+        accessToken: "pk.eyJ1IjoiY3dob25nbnljIiwiYSI6ImNpczF1MXdrdjA4MXcycXA4ZGtyN2x5YXIifQ.3HGyME8tBs6BnljzUVIt4Q"
+      });
+    }
+  }
+
   render() {
+
+    // necessary so that gatsby build will work properly
+    if (typeof window === `undefined`) { return null; }
+
     const { selectedFeature } = this.state;
+
     return (
       <div>
         <Search

@@ -34,19 +34,12 @@ class Map extends React.Component {
     return (
       <div>
         <Search
-          mapzen_api_key='mapzen-ugqm54r'
           onGeocoderSelection={(feature) => {
             this.setState({
               selectedFeature: feature,
               center: feature.geometry.coordinates,
               zoom: [18],
             })
-          }}
-          bounds={{
-            minLon: -74.292297,
-            maxLon: -73.618011,
-            minLat: 40.477248,
-            maxLat: 40.958123,
           }}
           onClear={() => {
             this.setState({ selectedFeature: null })

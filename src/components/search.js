@@ -40,13 +40,7 @@ class Search extends React.Component {
   }
 
   onSuggestionsFetchRequested = ({ value }) => {
-    let apiCall = `https://search.mapzen.com/v1/autocomplete?text=${value}`;
-
-    if (this.props.bounds) {
-      apiCall += `&boundary.rect.min_lon=${this.props.bounds.minLon}&boundary.rect.max_lon=${this.props.bounds.maxLon}&boundary.rect.min_lat=${this.props.bounds.minLat}&boundary.rect.max_lat=${this.props.bounds.maxLat}`;
-    }
-
-    apiCall += `&api_key=${this.props.mapzen_api_key}`;
+    let apiCall = `http://geosearch.planninglabs.nyc/v1/autocomplete?text=${value}`;
 
     fetch(apiCall)
       .then(response => response.json())
@@ -115,8 +109,6 @@ class Search extends React.Component {
 }
 
 Search.propTypes = {
-  bounds: PropTypes.object,
-  mapzen_api_key: PropTypes.string,
   onGeocoderSelection: PropTypes.func,
   onClear: PropTypes.func,
   selectionActive: PropTypes.bool,

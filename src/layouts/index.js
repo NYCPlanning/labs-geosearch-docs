@@ -12,9 +12,9 @@ import '../scss/app.scss';
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="NYC Planning Labs"
+      title="NYC GeoSearch"
       meta={[
-        { name: 'description', content: 'NYC Planning Labs builds open, impactful, modern technology tools for urban planners' }
+        { name: 'description', content: 'Autocomplete Search Results for New York City' }
       ]}
     >
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />

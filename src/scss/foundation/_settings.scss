@@ -294,10 +294,7 @@ $button-sizes: (
   default: 0.9rem,
   large: 1.25rem,
 );
-$button-palette: map-merge(
-  $foundation-palette,
-  $strategic-objectives-palette
-);
+$button-palette: $foundation-palette;
 $button-opacity-disabled: 0.25;
 $button-background-hover-lightness: -20%;
 $button-hollow-hover-lightness: -50%;
@@ -456,10 +453,7 @@ $form-button-radius: $global-radius;
 $label-background: $medium-gray;
 $label-color: $black;
 $label-color-alt: $white;
-$label-palette: map-merge(
-  $foundation-palette,
-  $strategic-objectives-palette
-);
+$label-palette: $foundation-palette;
 $label-font-size: 0.75rem;
 $label-padding: 0.375rem 0.75rem;
 $label-radius: $global-radius;

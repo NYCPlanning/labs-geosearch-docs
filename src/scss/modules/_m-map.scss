@@ -30,7 +30,14 @@
     position: absolute;
     top: 0.75rem;
     right: 0.5rem;
-    color: $dark-gray;
+    color: $medium-gray;
+    cursor: pointer;
+
+    @include breakpoint(xlarge) {
+      top: 1rem;
+      right: 0.75rem;
+      transform: scale(1.5);
+    }
   }
 }
 
@@ -38,6 +45,12 @@
   margin: 0;
   padding-right: 2rem;
   border-radius: 0;
+
+  @include breakpoint(xlarge) {
+    font-size: $input-font-size * 1.5;
+    height: 3rem;
+    padding-right: 2.5rem;
+  }
 }
 
 .react-autosuggest__suggestions-container {

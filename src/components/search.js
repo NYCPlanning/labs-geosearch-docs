@@ -108,7 +108,7 @@ class Search extends React.Component {
           inputProps={inputProps}
           onSuggestionSelected={this.onSuggestionSelected}
         />
-        <FontAwesome name='times' fixedWidth={true} className='clear-button' onClick={this.clearInput} />
+      <FontAwesome name='times' fixedWidth={true} className='clear-button' onClick={this.clearInput} />
       </div>
     );
   }

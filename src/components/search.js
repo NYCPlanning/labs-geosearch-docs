@@ -31,6 +31,7 @@ class Search extends React.Component {
     this.state = {
       value: '',
       suggestions: [],
+      apiCall: '',
     };
   }
 
@@ -40,7 +41,7 @@ class Search extends React.Component {
   }
 
   onSuggestionsFetchRequested = ({ value }) => {
-    let apiCall = `http://geosearch.planninglabs.nyc/v1/autocomplete?text=${value}`;
+    let apiCall = `https://geosearch.planninglabs.nyc/v1/autocomplete?text=${value}`;
 
     fetch(apiCall)
       .then(response => response.json())
@@ -48,12 +49,17 @@ class Search extends React.Component {
         this.setState({
           suggestions: data.features ? data.features : [],
         });
-      })
+
+        this.props.onResponse(data);
+      });
+
+    this.props.onSuggestions(apiCall);
   }
 
   onSuggestionsClearRequested = () => {
     this.setState({
       suggestions: [],
+      apiCall: '',
     });
   }
 

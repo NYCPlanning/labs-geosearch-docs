@@ -6,7 +6,6 @@ import Helmet from 'react-helmet';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Map from '../components/map';
-import Response from '../components/response';
 
 import '../scss/app.scss';
 
@@ -27,14 +26,7 @@ const TemplateWrapper = ({ children }) => (
 
     <div className="main grid-x">
       <div className="cell xlarge-5 xlarge-order-2">
-        <div className="grid-x">
-          <div className="cell medium-6 xlarge-12" style={{zIndex:'2'}}>
-            <Map />
-          </div>
-          <div className="cell medium-6 xlarge-12" style={{zIndex:'1'}}>
-            <Response />
-          </div>
-        </div>
+        <Map />
       </div>
       <div className="cell xlarge-7 xlarge-order-1">
         {children()}

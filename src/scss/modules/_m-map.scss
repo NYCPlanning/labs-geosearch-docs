@@ -29,6 +29,7 @@
   height: 200px;
   min-height: calc(33vh - 3rem);
   overflow: auto;
+  background-color: $dark-gray;
 
   @include breakpoint(medium) {
     min-height: calc(50vw - 6rem);

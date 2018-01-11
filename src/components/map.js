@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import ReactMapboxGl, { GeoJSONLayer } from 'react-mapbox-gl';
 import Search from './search';
+import Response from '../components/response';
 
 let MapboxGl = null;
 
@@ -9,6 +10,8 @@ class Map extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      apiCall: null,
+      response: '',
       selectedFeature: null,
       center: [-74.0030685, 40.7335205],
       zoom: [11],
@@ -29,42 +32,63 @@ class Map extends React.Component {
     // necessary so that gatsby build will work properly
     if (typeof window === `undefined`) { return null; }
 
-    const { selectedFeature } = this.state;
+    const { selectedFeature, apiCall, response } = this.state;
 
     return (
-      <div>
-        <Search
-          onGeocoderSelection={(feature) => {
-            this.setState({
-              selectedFeature: feature,
-              center: feature.geometry.coordinates,
-              zoom: [18],
-            })
-          }}
-          onClear={() => {
-            this.setState({ selectedFeature: null })
-          }}
-        />
-        <MapboxGl
-          style='mapbox://styles/mapbox/light-v9'
-          center={this.state.center}
-          zoom={this.state.zoom}
-          >
-          {selectedFeature && (
-            <GeoJSONLayer
-              data={selectedFeature}
-              circlePaint={{
-                'circle-color': 'DodgerBlue',
-                'circle-opacity': 0.7,
-                'circle-radius': {
-                  'stops': [
-                    [11, 5],
-                    [18, 15],
-                  ]
-                },
-              }}/>
-          )}
-        </MapboxGl>
+      <div className="grid-x">
+        <div className="cell medium-6 xlarge-12" style={{zIndex:'2'}}>
+          <div>
+            <Search
+              onGeocoderSelection={(feature) => {
+                this.setState({
+                  apiCall: apiCall,
+                  selectedFeature: feature,
+                  center: feature.geometry.coordinates,
+                  zoom: [18],
+                })
+              }}
+              onSuggestions={(apiCall) => {
+                this.setState({apiCall});
+              }}
+              onResponse={(response) => {
+                this.setState({response});
+              }}
+              onClear={() => {
+                this.setState({
+                  selectedFeature: null,
+                  apiCall: null,
+                  response: '',
+                })
+              }}
+            />
+            <MapboxGl
+              style='mapbox://styles/mapbox/light-v9'
+              center={this.state.center}
+              zoom={this.state.zoom}
+              >
+              {selectedFeature && (
+                <GeoJSONLayer
+                  data={selectedFeature}
+                  circlePaint={{
+                    'circle-color': 'DodgerBlue',
+                    'circle-opacity': 0.7,
+                    'circle-radius': {
+                      'stops': [
+                        [11, 5],
+                        [18, 15],
+                      ]
+                    },
+                  }}/>
+              )}
+            </MapboxGl>
+          </div>
+        </div>
+        <div className="cell medium-6 xlarge-12" style={{zIndex:'1'}}>
+          <Response
+            apiCall={apiCall}
+            response={response}
+          />
+        </div>
       </div>
     )
   }

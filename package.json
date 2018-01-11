@@ -6,20 +6,21 @@
   "dependencies": {
     "anchorate": "^1.1.0",
     "foundation-sites": "^6.4.1",
-    "gatsby": "^1.9.127",
-    "gatsby-link": "^1.6.30",
+    "gatsby": "^1.9.152",
+    "gatsby-link": "^1.6.34",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-sass": "latest",
     "mapbox-gl": "^0.43.0",
     "moment": "^2.20.1",
     "motion-ui": "^1.2.3",
+    "prettier": "^1.10.1",
     "react-autosuggest": "^9.3.2",
     "react-fontawesome": "^1.6.1",
     "react-mapbox-gl": "^3.4.1",
     "react-moment": "^0.6.8",
     "react-router-dom": "^4.2.2",
     "react-scrollable-anchor": "^0.5.0",
-    "react-scrollspy": "^3.3.4",
+    "react-scrollspy": "^3.3.5",
     "react-sticky": "^6.0.1"
   },
   "keywords": [
@@ -34,7 +35,5 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "sh scripts/deploy.sh"
   },
-  "devDependencies": {
-    "prettier": "^1.8.2"
-  }
+  "devDependencies": {}
 }

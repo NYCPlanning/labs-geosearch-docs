@@ -73,6 +73,14 @@
   left: 10px;
   z-index: 2;
 
+  @include breakpoint(medium) {
+    right: calc(50% + 10px);
+  }
+
+  @include breakpoint(xlarge) {
+    right: 10px;
+  }
+
   .clear-button {
     position: absolute;
     top: 0.75rem;

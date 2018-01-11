@@ -32,7 +32,7 @@ class Header extends React.Component {
           <div className="branding cell shrink large-auto">
             <a className="dcp-link" href="http://www1.nyc.gov/site/planning/index.page"><img className="dcp-logo" src="https://raw.githubusercontent.com/NYCPlanning/logo/master/dcp_logo_772.png" alt="NYC Planning" /></a>
             <Link to="/" className="site-name">
-              GeoSearch <small className="site-subtitle show-for-medium">Autocomplete Search Results for N<span className="show-for-large">ew </span>Y<span className="show-for-large">ork </span>C<span className="show-for-large">ity</span></small>
+              GeoSearch <small className="site-subtitle show-for-medium">Autoritative <span className="show-for-large">Search</span> Results for N<span className="show-for-large">ew </span>Y<span className="show-for-large">ork </span>C<span className="show-for-large">ity</span> Addresses</small>
             </Link>
           </div>
           <div className="cell auto hide-for-large text-right">

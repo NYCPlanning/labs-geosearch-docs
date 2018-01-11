@@ -15,7 +15,7 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="NYC GeoSearch"
       meta={[
-        { name: 'description', content: 'Autocomplete Search Results for New York City' }
+        { name: 'description', content: 'Autoritative Search Results for New York City Addresses' }
       ]}
     >
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -26,8 +26,8 @@ const TemplateWrapper = ({ children }) => (
     <Header />
 
     <div className="main grid-x">
-      <div className="cell xlarge-4 xlarge-order-2">
-        <div className="main grid-x">
+      <div className="cell xlarge-5 xlarge-order-2">
+        <div className="grid-x">
           <div className="cell medium-6 xlarge-12" style={{zIndex:'2'}}>
             <Map />
           </div>
@@ -36,7 +36,7 @@ const TemplateWrapper = ({ children }) => (
           </div>
         </div>
       </div>
-      <div className="cell xlarge-8 xlarge-order-1">
+      <div className="cell xlarge-7 xlarge-order-1">
         {children()}
         <Footer />
       </div>

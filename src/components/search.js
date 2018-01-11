@@ -51,7 +51,6 @@ class Search extends React.Component {
     fetch(apiCall)
       .then(response => response.json())
       .then((data) => {
-        console.log(data.features)
         this.setState({
           suggestions: data.features ? data.features : [],
         });

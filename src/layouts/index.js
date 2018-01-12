@@ -14,7 +14,7 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="NYC GeoSearch"
       meta={[
-        { name: 'description', content: 'Autoritative Search Results for New York City Addresses' }
+        { name: 'description', content: 'Authoritative Search Results for New York City Addresses' }
       ]}
     >
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />

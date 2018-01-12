@@ -20,6 +20,14 @@ pre code {
   margin-bottom: $global-margin;
 }
 
+.json-pretty {
+  background: $light-gray;
+  border: $code-border;
+  padding: rem-calc(10);
+  margin-bottom: $global-margin;
+  font-size: rem-calc(14);
+}
+
 .inline-icon {
   display: inline-block;
   height: 1em;

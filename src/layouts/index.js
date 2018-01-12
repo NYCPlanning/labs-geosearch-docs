@@ -25,10 +25,10 @@ const TemplateWrapper = ({ children }) => (
     <Header />
 
     <div className="main grid-x">
-      <div className="cell xlarge-5 xlarge-order-2">
+      <div className="cell xlarge-6 xlarge-order-2">
         <Map />
       </div>
-      <div className="cell xlarge-7 xlarge-order-1">
+      <div className="cell xlarge-6 xlarge-order-1">
         {children()}
         <Footer />
       </div>

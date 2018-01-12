@@ -7,24 +7,15 @@ const Footer = () => (
   <footer role="contentinfo" className="site-footer text-center medium-text-right large-text-left">
     <div className="grid-container">
       <nav className="grid-x grid-padding-x grid-padding-y">
-        <div className="cell medium-shrink large-6">
+        <div className="cell medium-auto">
           <a className="footer-logo media_link" href="http://nyc.gov/planning"><img alt="NYC DCP" src="https://raw.githubusercontent.com/NYCPlanning/logo/master/dcp_logo_772.png" /></a>
         </div>
-        <div className="cell medium-auto">
-          <div className="grid-x grid-padding-x grid-padding-y">
-            <div className="cell medium-auto large-auto">
-              <nav role="navigation" className="footer-nav">
-                 <NavLinks />
-              </nav>
-            </div>
-            <div className="cell medium-auto">
-              <ul className="no-bullet">
-                <li><a href="https://github.com/NYCPlanning/labs-nyc-geosearch-docs"><FontAwesome name='github' style={{ opacity: '0.8' }} /> Github</a> <span className="medium-gray" style={{ fontWeight: 'normal' }}>|</span> <a href="https://github.com/NYCPlanning/labs-nyc-geosearch-docs/issues/new">Report a bug</a></li>
-                <li><a href="https://twitter.com/nycplanninglabs"><FontAwesome name='twitter' style={{ opacity: '0.8' }} /> @NYCPlanningLabs</a></li>
-                <li><a href="mailto:labs_dl@planning.nyc.gov"><FontAwesome name='envelope' style={{ 'opacity': '0.8' }} /> labs_dl@planning.nyc.gov</a></li>
-              </ul>
-            </div>
-          </div>
+        <div className="cell medium-shrink">
+          <ul className="no-bullet">
+            <li><a href="https://github.com/NYCPlanning/labs-nyc-geosearch-docs"><FontAwesome name='github' style={{ opacity: '0.8' }} /> Github</a> <span className="medium-gray" style={{ fontWeight: 'normal' }}>|</span> <a href="https://github.com/NYCPlanning/labs-nyc-geosearch-docs/issues/new">Report a bug</a></li>
+            <li><a href="https://twitter.com/nycplanninglabs"><FontAwesome name='twitter' style={{ opacity: '0.8' }} /> @NYCPlanningLabs</a></li>
+            <li><a href="mailto:labs_dl@planning.nyc.gov"><FontAwesome name='envelope' style={{ 'opacity': '0.8' }} /> labs_dl@planning.nyc.gov</a></li>
+          </ul>
         </div>
       </nav>
     </div>

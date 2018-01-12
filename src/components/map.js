@@ -5,13 +5,15 @@ import Search from './search';
 import Response from '../components/response';
 
 let MapboxGl = null;
+const apiCallNullMessage = 'https://geosearch.planninglabs.nyc/v1/autocomplete?text='
+const responseNullMessage = '{}'
 
 class Map extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      apiCall: null,
-      response: '',
+      apiCall: apiCallNullMessage,
+      response: responseNullMessage,
       selectedFeature: null,
       center: [-74.0030685, 40.7335205],
       zoom: [11],
@@ -56,8 +58,8 @@ class Map extends React.Component {
               onClear={() => {
                 this.setState({
                   selectedFeature: null,
-                  apiCall: null,
-                  response: '',
+                  apiCall: apiCallNullMessage,
+                  response: responseNullMessage,
                 })
               }}
             />

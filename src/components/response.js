@@ -8,7 +8,7 @@ class Response extends React.Component {
     return(
 
       <div className="response">
-        <div className="response-query">{this.props.apiCall} &nbsp;</div>
+        <div className="response-query">{this.props.apiCall}</div>
         <JSONPretty className="response-json" json={this.props.response}></JSONPretty>
       </div>
 

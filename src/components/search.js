@@ -18,7 +18,7 @@ function renderSuggestion(suggestion) {
 }
 
 function shouldRenderSuggestions(value) {
-  return value.trim().length > 2;
+  return value.trim().length > 0;
 }
 
 class Search extends React.Component {

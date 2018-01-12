@@ -8,7 +8,7 @@ class IndexPage extends React.Component {
     return (
       <div className="page">
 
-        <p className="lead">NYC GeoSearch is a service that transforms input text — such as an address, or the name of a place — to a authoritative New York City addresses using data from the <a href="https://www1.nyc.gov/site/planning/data-maps/open-data.page#pad">Property Address Directory</a>. </p>
+        <p className="lead">NYC GeoSearch is a service that transforms input text—such as an address, or the name of a place—to authoritative New York City addresses using data from the <a href="https://www1.nyc.gov/site/planning/data-maps/open-data.page#pad">Property Address Directory</a>. </p>
 
         <p>GeoSearch provides autocomplete search results in web apps such as <a>ZoLa</a> and <a>Population Fact Finder</a>. Real-time feedback while searching for an address, where users start typing and a list appears allowing them to choose their search term, makes our apps more user-friendly and intuitive. </p>
 
@@ -56,12 +56,17 @@ class IndexPage extends React.Component {
         <p>All results are points, and can be found in the coordinates array. Following the GeoJSON specification, these coordinates are in <strong>longitude, latitude</strong> order.</p>
 
 
+        <h4>Bounding box</h4>
+
+        <p>The <code>bbox</code> property describes the geographic extent of the entire FeatureCollection.</p>
+
+
         <h4>Result count</h4>
 
-        <p>By default, results return 10 places, unless otherwise specified. If you want a different number of results, set the <code>size</code> parameter to the desired number.</p>
+        <p>By default, <code>/search</code> results return 10 places, unless otherwise specified. If you want a different number of results, set the <code>size</code> parameter to the desired number.</p>
 
         <p>This example shows returning only the first result:</p>
-        <JSONPretty className="" json={'/v1/autocomplete?text=120 Broadway&size=1'} />
+        <JSONPretty className="" json={'/v1/search?text=120 Broadway&size=1'} />
 
         <p>If you want 25 results, you can build the query where size is 25:</p>
         <JSONPretty className="" json={'/v1/search?text=120 Broadway&size=25'} />

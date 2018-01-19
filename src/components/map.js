@@ -46,7 +46,7 @@ class Map extends React.Component {
                   apiCall: apiCall,
                   selectedFeature: feature,
                   center: feature.geometry.coordinates,
-                  zoom: [18],
+                  zoom: [15.5],
                 })
               }}
               onSuggestions={(apiCall) => {

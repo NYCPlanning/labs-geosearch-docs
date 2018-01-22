@@ -56,3 +56,7 @@ pre code {
 .dcp-orange { color: $dcp-orange; }
 .dcp-yellow { color: $dcp-yellow; }
 .a11y-yellow { color: $a11y-yellow; }
+
+::-ms-clear {
+  display: none;
+}

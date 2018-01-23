@@ -3,12 +3,12 @@ import Link from 'gatsby-link';
 
 const links = [
   {
-    text: 'Docs',
+    text: 'About',
     url: '/',
   },
   {
-    text: 'About',
-    url: '/about/',
+    text: 'Docs',
+    url: '/docs/',
   },
   {
     text: 'Feedback',

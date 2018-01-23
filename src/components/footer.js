@@ -12,7 +12,6 @@ const Footer = () => (
         </div>
         <div className="cell medium-shrink">
           <ul className="no-bullet">
-            <li><a href="https://github.com/NYCPlanning/labs-nyc-geosearch-docs"><FontAwesome name='github' style={{ opacity: '0.8' }} /> Github</a> <span className="medium-gray" style={{ fontWeight: 'normal' }}>|</span> <a href="https://github.com/NYCPlanning/labs-nyc-geosearch-docs/issues/new">Report a bug</a></li>
             <li><a href="https://twitter.com/nycplanninglabs"><FontAwesome name='twitter' style={{ opacity: '0.8' }} /> @NYCPlanningLabs</a></li>
             <li><a href="mailto:labs_dl@planning.nyc.gov"><FontAwesome name='envelope' style={{ 'opacity': '0.8' }} /> labs_dl@planning.nyc.gov</a></li>
           </ul>

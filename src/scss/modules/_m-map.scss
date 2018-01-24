@@ -120,12 +120,14 @@
 }
 
 .react-autosuggest__suggestions-container {
-  background-color: $light-gray;
+  padding: 0 2px;
 }
 
 .react-autosuggest__suggestions-list {
   list-style: none;
   margin: 0;
+  background-color: $light-gray;
+  box-shadow: 0 2px 0 2px rgba(0,0,0,0.1);
 }
 
 .react-autosuggest__suggestion {

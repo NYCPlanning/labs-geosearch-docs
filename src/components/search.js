@@ -4,8 +4,7 @@ import Autosuggest from 'react-autosuggest';
 import _ from 'lodash';
 import FontAwesome from 'react-fontawesome';
 
-import fetch from 'isomorphic-fetch'
-// require('isomorphic-fetch');
+import fetch from 'isomorphic-fetch';
 
 function getSuggestionValue(suggestion) {
   return suggestion.properties.label;

@@ -43,6 +43,12 @@ class IndexPage extends React.Component {
             <p className="text-small">Containerized local installation package for NYC GeoSearch</p>
           </li>
           <li>
+            <a href="https://github.com/NYCPlanning/labs-geosearch-api" target="_blank"><FontAwesome name='github' style={{ opacity: '0.8' }} />&nbsp; <strong>labs-geosearch-api</strong></a>
+            &nbsp;&nbsp;<span className="medium-gray">|</span>&nbsp;&nbsp;
+            <a href="https://github.com/NYCPlanning/labs-geosearch-api/issues/new" target="_blank"><small>Report a bug</small></a>
+            <p className="text-small">Express.js API that proxies requests to Pelias, appending metadata to its response</p>
+          </li>
+          <li>
             <a href="https://github.com/NYCPlanning/labs-geosearch-pad-normalize" target="_blank"><FontAwesome name='github' style={{ opacity: '0.8' }} />&nbsp; <strong>labs-geosearch-pad-normalize</strong></a>
             &nbsp;&nbsp;<span className="medium-gray">|</span>&nbsp;&nbsp;
             <a href="https://github.com/NYCPlanning/labs-geosearch-pad-normalize" target="_blank"><small>Report a bug</small></a>
@@ -52,7 +58,7 @@ class IndexPage extends React.Component {
             <a href="https://github.com/NYCPlanning/labs-geosearch-pad-importer" target="_blank"><FontAwesome name='github' style={{ opacity: '0.8' }} />&nbsp; <strong>labs-geosearch-pad-importer</strong></a>
             &nbsp;&nbsp;<span className="medium-gray">|</span>&nbsp;&nbsp;
             <a href="https://github.com/NYCPlanning/labs-geosearch-pad-importer/issues/new" target="_blank"><small>Report a bug</small></a>
-            <p className="text-small">A Pelias importer for authoritative NYC addresses</p>
+            <p className="text-small">Pelias data importer for authoritative NYC addresses</p>
           </li>
           <li>
             <a href="https://github.com/NYCPlanning/labs-geosearch-docs" target="_blank"><FontAwesome name='github' style={{ opacity: '0.8' }} />&nbsp; <strong>labs-geosearch-docs</strong></a>

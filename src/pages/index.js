@@ -31,7 +31,7 @@ class IndexPage extends React.Component {
 
         <p className="text-small">NYC GeoSearch is built on <a href="http://pelias.io/" target="_blank">Pelias</a>, the open source geocoding engine that powered Mapzen Search. It uses authoritative <a href="https://www1.nyc.gov/site/planning/data-maps/open-data.page#pad" target="_blank">Property Address Directory (PAD)</a> data from the NYC Planning's Geographic Systems Section. Since this data contains ranges of addresses, it's normalized and expanded into discrete address rows that Pelias understands.</p>
 
-        <p><img src="https://user-images.githubusercontent.com/1833820/35118079-b384f024-fc5e-11e7-9f31-83a281e42381.png" /></p>
+        <p><img src="https://user-images.githubusercontent.com/1833820/35636336-d944fb22-067e-11e8-800c-65ca2100a67b.png" /></p>
 
         <h4 className="header-medium">Learn more on GitHub:</h4>
 

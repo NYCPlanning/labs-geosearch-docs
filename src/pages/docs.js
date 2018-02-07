@@ -3,12 +3,12 @@ import Link from 'gatsby-link';
 import FontAwesome from 'react-fontawesome';
 import JSONPretty from 'react-json-pretty';
 
+import BetaWarning from '../components/beta-warning';
+
 const AboutPage = () => (
   <div className="page">
 
-    <div className="callout secondary">
-      <FontAwesome name='exclamation-triangle' />&nbsp; This documentation is a work in progress and subject to change.
-    </div>
+    <BetaWarning />
 
     <h1>API Documentation</h1>
 

@@ -53,7 +53,7 @@ class AboutPage extends Component {
           src="https://airtable.com/embed/shrDlHV5nDpQnXRue?backgroundColor=yellow"
           frameBorder="0"
           width="100%"
-          height="850"
+          height="1020"
           onLoad={this.iframeLoaded}
         />
       </div>

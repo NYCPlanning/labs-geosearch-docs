@@ -64,7 +64,7 @@ class Map extends React.Component {
               }}
             />
             <MapboxGl
-              style='mapbox://styles/mapbox/light-v9'
+              style='//raw.githubusercontent.com/NYCPlanning/labs-gl-style/master/data/style.json'
               center={this.state.center}
               zoom={this.state.zoom}
               >

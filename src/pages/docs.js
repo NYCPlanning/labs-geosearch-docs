@@ -25,7 +25,7 @@ const AboutPage = () => (
           <p>Since GeoSearch is based on Pelias, see that documentation for more details.</p>
 
           <ul>
-            <li>Pelias API documentation: <a href="https://github.com/pelias/pelias-doc" target="_blank">github.com/pelias/pelias-doc</a></li>
+            <li>Pelias API documentation: <a href="https://github.com/pelias/documentation" target="_blank">github.com/pelias/documentation</a></li>
             <li>General Pelias info: <a href="https://github.com/pelias/pelias/" target="_blank">github.com/pelias/pelias/</a></li>
           </ul>
         </div>
@@ -60,12 +60,12 @@ const AboutPage = () => (
     <blockquote><a href="https://geosearch.planninglabs.nyc/v1/search?text=120 Bro&size=25" target="_blank">https://geosearch.planninglabs.nyc/v1/search?text=120 Bro&size=25</a></blockquote>
 
     <h3 className="header-medium">Other parameters</h3>
-    <p>Since GeoSearch data is specific to New York City, not <a href="https://github.com/pelias/pelias-doc/blob/master/search.md#available-search-parameters" target="_blank"><strong>all parameters available in Pelias</strong></a> work the same. However, there are some other parameters that might be used to refine your search:</p>
+    <p>Since GeoSearch data is specific to New York City, not <a href="https://github.com/pelias/documentation/blob/master/search.md#available-search-parameters" target="_blank"><strong>all parameters available in Pelias</strong></a> work the same. However, there are some other parameters that might be used to refine your search:</p>
     <ul>
-      <li><a href="https://github.com/pelias/pelias-doc/blob/master/search.md#search-within-a-rectangular-region" target="_blank"><strong>Search within a rectangular region</strong></a> - Specify a boundary using the minimum and maximum latitude/longitude</li>
-      <li><a href="https://github.com/pelias/pelias-doc/blob/master/search.md#search-within-a-circular-region" target="_blank"><strong>Search within a circular region</strong></a> - Specify a boundary using a maximum distance from a point</li>
-      <li><a href="https://github.com/pelias/pelias-doc/blob/master/search.md#specify-multiple-boundaries" target="_blank"><strong>Specify multiple boundaries</strong></a> - Results limited to the intersection of all specified boundaries</li>
-      <li><a href="https://github.com/pelias/pelias-doc/blob/master/search.md#prioritize-results-by-proximity" target="_blank"><strong>Prioritize results by proximity</strong></a> - Prioritize results within geographic boundaries</li>
+      <li><a href="https://github.com/pelias/documentation/blob/master/search.md#search-within-a-rectangular-region" target="_blank"><strong>Search within a rectangular region</strong></a> - Specify a boundary using the minimum and maximum latitude/longitude</li>
+      <li><a href="https://github.com/pelias/documentation/blob/master/search.md#search-within-a-circular-region" target="_blank"><strong>Search within a circular region</strong></a> - Specify a boundary using a maximum distance from a point</li>
+      <li><a href="https://github.com/pelias/documentation/blob/master/search.md#specify-multiple-boundaries" target="_blank"><strong>Specify multiple boundaries</strong></a> - Results limited to the intersection of all specified boundaries</li>
+      <li><a href="https://github.com/pelias/documentation/blob/master/search.md#prioritize-results-by-proximity" target="_blank"><strong>Prioritize results by proximity</strong></a> - Prioritize results within geographic boundaries</li>
     </ul>
 
 

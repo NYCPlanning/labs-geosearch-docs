@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 import Helmet from 'react-helmet';
 
 import Header from '../components/header';
@@ -29,7 +29,7 @@ const TemplateWrapper = ({ children }) => (
         <Map />
       </div>
       <div className="cell xlarge-6 xlarge-order-1">
-        {children()}
+        {children}
         <Footer />
       </div>
     </div>
@@ -38,7 +38,7 @@ const TemplateWrapper = ({ children }) => (
 )
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.object,
 }
 
 export default TemplateWrapper

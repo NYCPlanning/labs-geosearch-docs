@@ -123,4 +123,4 @@ Search.propTypes = {
   leftOffset: PropTypes.number,
 };
 
-module.exports = Search;
+export default Search;

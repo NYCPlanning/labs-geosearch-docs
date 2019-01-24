@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 import NavLinks from './nav-links';
 import FontAwesome from 'react-fontawesome';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 
 const links = [
   {
@@ -17,7 +17,7 @@ const links = [
 ];
 
 const linksList = links.map((link) => {
-  return (<li key={link.text}><Link exact to={link.url} activeClassName="is-active">{link.text}</Link></li>)
+  return (<li key={link.text}><Link exact="true" to={link.url} activeClassName="is-active">{link.text}</Link></li>)
 })
 
 const NavLinks = (props) => (

@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 import ReactMapboxGl, { GeoJSONLayer } from 'react-mapbox-gl';
 import Search from './search';
 import Response from '../components/response';

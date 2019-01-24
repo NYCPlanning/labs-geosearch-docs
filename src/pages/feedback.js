@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 import FontAwesome from 'react-fontawesome';
+
+import Layout from "../components/layout"
+
 
 const Loading = props => (
   <div>
@@ -45,22 +48,24 @@ class AboutPage extends Component {
 
   render() {
     const form = (
-      <div className="page">
+      <Layout>
+        <div className="page">
 
-        <p className="text-right text-small no-margin"><a href="https://github.com/NYCPlanning/labs-geosearch-dockerfiles/issues/new" target="_blank"><FontAwesome name='github' fixedWidth style={{transform:'scale(1.5)'}} />&nbsp;<strong>Create an issue</strong></a></p>
+          <p className="text-right text-small no-margin"><a href="https://github.com/NYCPlanning/labs-geosearch-dockerfiles/issues/new" target="_blank"><FontAwesome name='github' fixedWidth style={{transform:'scale(1.5)'}} />&nbsp;<strong>Create an issue</strong></a></p>
 
-        <Loading loading={this.state.loading} />
-        <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js" />
-        <iframe
-          className="airtable-embed airtable-dynamic-height"
-          title="feedback-form"
-          src="https://airtable.com/embed/shrDlHV5nDpQnXRue?backgroundColor=yellow"
-          frameBorder="0"
-          width="100%"
-          height="1020"
-          onLoad={this.iframeLoaded}
-        />
-      </div>
+          <Loading loading={this.state.loading} />
+          <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js" />
+          <iframe
+            className="airtable-embed airtable-dynamic-height"
+            title="feedback-form"
+            src="https://airtable.com/embed/shrDlHV5nDpQnXRue?backgroundColor=yellow"
+            frameBorder="0"
+            width="100%"
+            height="1020"
+            onLoad={this.iframeLoaded}
+          />
+        </div>
+     </Layout>
     );
 
     return form;

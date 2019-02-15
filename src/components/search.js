@@ -43,7 +43,7 @@ class Search extends React.Component {
   }
 
   onSuggestionsFetchRequested = ({ value }) => {
-    let apiCall = `https://geosearch.planninglabs.nyc/v1/autocomplete?text=${value}`;
+    let apiCall = `http://159.89.238.220/v1/autocomplete?text=${value}`;
 
     fetch(apiCall)
       .then(response => response.json())

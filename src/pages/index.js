@@ -18,9 +18,9 @@ class IndexPage extends React.Component {
 
           <div className="grid-x grid-margin-x grid-padding-y">
             <div className="cell medium-6">
-              <p className="no-margin">GeoSearch provides autocomplete search results in NYC Planning's web apps:</p>
+              <p className="no-margin">GeoSearch provides autocomplete search results in NYC Planning's web apps, including:</p>
               <ul>
-                <li><a href="https://zola.planning.nyc.gov" target="_blank"><strong>Zoning&nbsp;&amp; Land&nbsp;Use Map</strong></a></li>
+                <li><a href="https://zola.planning.nyc.gov" target="_blank"><strong>Zoning&nbsp;&amp; Land&nbsp;Use Map (ZoLa)</strong></a></li>
                 <li><a href="https://communityprofiles.planning.nyc.gov/" target="_blank"><strong>Community District Profiles</strong></a></li>
               </ul>
             </div>
@@ -35,7 +35,7 @@ class IndexPage extends React.Component {
 
           <h3 className="header-large">How does it work?</h3>
 
-          <p className="text-small">NYC GeoSearch is built on <a href="http://pelias.io/" target="_blank">Pelias</a>, the open source geocoding engine that powered Mapzen Search. It uses authoritative <a href="https://www1.nyc.gov/site/planning/data-maps/open-data.page#pad" target="_blank">Property Address Directory (PAD)</a> data from the NYC Planning's Geographic Systems Section. Since this data contains ranges of addresses, it's normalized and expanded into discrete address rows that Pelias understands.</p>
+          <p className="text-small">NYC GeoSearch is built on <a href="http://pelias.io/" target="_blank">Pelias</a>, the open source geocoding engine that powered Mapzen Search. It uses authoritative <a href="https://www1.nyc.gov/site/planning/data-maps/open-data.page#pad" target="_blank">Property Address Directory (PAD)</a> data from the NYC Planning's Citywide Geo Section (A team in the Information Technology Division). Since this data contains ranges of addresses, it's normalized and expanded into discrete address rows that Pelias understands.</p>
 
           <p><img src="https://user-images.githubusercontent.com/1833820/35636336-d944fb22-067e-11e8-800c-65ca2100a67b.png" /></p>
 
@@ -43,16 +43,10 @@ class IndexPage extends React.Component {
 
           <ul className="no-bullet">
             <li>
-              <a href="https://github.com/NYCPlanning/labs-geosearch-dockerfiles" target="_blank"><FontAwesome name='github' style={{ opacity: '0.8' }} />&nbsp; <strong>labs-geosearch-dockerfiles</strong></a>
+              <a href="https://github.com/NYCPlanning/labs-geosearch-docker" target="_blank"><FontAwesome name='github' style={{ opacity: '0.8' }} />&nbsp; <strong>labs-geosearch-dockerfiles</strong></a>
               &nbsp;&nbsp;<span className="medium-gray">|</span>&nbsp;&nbsp;
               <a href="https://github.com/NYCPlanning/labs-geosearch-dockerfiles/issues/new" target="_blank"><small>Report a bug</small></a>
-              <p className="text-small">Containerized local installation package for NYC GeoSearch</p>
-            </li>
-            <li>
-              <a href="https://github.com/NYCPlanning/labs-geosearch-api" target="_blank"><FontAwesome name='github' style={{ opacity: '0.8' }} />&nbsp; <strong>labs-geosearch-api</strong></a>
-              &nbsp;&nbsp;<span className="medium-gray">|</span>&nbsp;&nbsp;
-              <a href="https://github.com/NYCPlanning/labs-geosearch-api/issues/new" target="_blank"><small>Report a bug</small></a>
-              <p className="text-small">Express.js API that proxies requests to Pelias, appending metadata to its response</p>
+              <p className="text-small">Docker-compose commands for managing data imports and GeoSearch services</p>
             </li>
             <li>
               <a href="https://github.com/NYCPlanning/labs-geosearch-pad-normalize" target="_blank"><FontAwesome name='github' style={{ opacity: '0.8' }} />&nbsp; <strong>labs-geosearch-pad-normalize</strong></a>

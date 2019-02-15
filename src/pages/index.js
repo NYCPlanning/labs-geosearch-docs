@@ -43,7 +43,7 @@ class IndexPage extends React.Component {
 
           <ul className="no-bullet">
             <li>
-              <a href="https://github.com/NYCPlanning/labs-geosearch-docker" target="_blank"><FontAwesome name='github' style={{ opacity: '0.8' }} />&nbsp; <strong>labs-geosearch-dockerfiles</strong></a>
+              <a href="https://github.com/NYCPlanning/labs-geosearch-docker" target="_blank"><FontAwesome name='github' style={{ opacity: '0.8' }} />&nbsp; <strong>labs-geosearch-docker</strong></a>
               &nbsp;&nbsp;<span className="medium-gray">|</span>&nbsp;&nbsp;
               <a href="https://github.com/NYCPlanning/labs-geosearch-dockerfiles/issues/new" target="_blank"><small>Report a bug</small></a>
               <p className="text-small">Docker-compose commands for managing data imports and GeoSearch services</p>

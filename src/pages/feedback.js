@@ -51,7 +51,7 @@ class AboutPage extends Component {
       <Layout>
         <div className="page">
 
-          <p className="text-right text-small no-margin"><a href="https://github.com/NYCPlanning/labs-geosearch-dockerfiles/issues/new" target="_blank"><FontAwesome name='github' fixedWidth style={{transform:'scale(1.5)'}} />&nbsp;<strong>Create an issue</strong></a></p>
+          <p className="text-right text-small no-margin"><a href="https://github.com/NYCPlanning/labs-geosearch-docker/issues/new" target="_blank"><FontAwesome name='github' fixedWidth style={{transform:'scale(1.5)'}} />&nbsp;<strong>Create an issue</strong></a></p>
 
           <Loading loading={this.state.loading} />
           <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js" />

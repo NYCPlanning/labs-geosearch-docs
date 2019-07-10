@@ -5,7 +5,7 @@ import Search from './search';
 import Response from '../components/response';
 
 let MapboxGl = null;
-const apiCallNullMessage = 'http://159.89.238.220/v1/autocomplete?text='
+const apiCallNullMessage = 'https://geosearch.planninglabs.nyc/v1/autocomplete?text='
 const responseNullMessage = '{}'
 
 class Map extends React.Component {
@@ -24,7 +24,7 @@ class Map extends React.Component {
     // necessary so that gatsby build will work properly
     if (typeof window !== `undefined`) {
       MapboxGl = ReactMapboxGl({
-        accessToken: "pk.eyJ1IjoiY3dob25nbnljIiwiYSI6ImNpczF1MXdrdjA4MXcycXA4ZGtyN2x5YXIifQ.3HGyME8tBs6BnljzUVIt4Q"
+        accessToken: ""
       });
     }
   }
@@ -64,7 +64,7 @@ class Map extends React.Component {
               }}
             />
             <MapboxGl
-              style="//raw.githubusercontent.com/NYCPlanning/labs-gl-style/master/data/style.json"
+              style="https://layers-api.planninglabs.nyc/v1/base/style.json"
               center={this.state.center}
               zoom={this.state.zoom}
               >

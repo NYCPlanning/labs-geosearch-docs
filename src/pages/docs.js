@@ -4,13 +4,10 @@ import FontAwesome from 'react-fontawesome';
 import JSONPretty from 'react-json-pretty';
 
 import Layout from "../components/layout"
-import BetaWarning from '../components/beta-warning';
 
 const AboutPage = () => (
   <Layout>
     <div className="page">
-
-      <BetaWarning />
 
       <h1>API Documentation</h1>
 

@@ -27,7 +27,6 @@ class Header extends React.Component {
     return (
       <header role="banner" className="site-header">
         <a className="show-on-focus" href="#main">Skip to main content</a>
-        <a href="https://planninglabs.nyc/" className="labs-beta-notice hide-for-print">A beta project of NYC Planning Labs</a>
         <div className="grid-x grid-padding-x">
           <div className="branding cell shrink large-auto">
             <a className="dcp-link" href="http://www1.nyc.gov/site/planning/index.page"><img className="dcp-logo" src="https://raw.githubusercontent.com/NYCPlanning/logo/master/dcp_logo_772.png" alt="NYC Planning" /></a>

@@ -20,11 +20,15 @@ exports.onCreatePage = ({ page, boundActionCreators }) => {
 }
 
 // necessary to get gatsby build to run properly
-exports.modifyWebpackConfig = ({ config, stage }) => {
+exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
   if (stage === "build-html") {
-    config.loader("null", {
+    const config = getConfig();
+    config.module.rules.push({
       test: /(mapbox-gl)\.js$/,
-      loader: "null-loader",
-    });
+      use: {
+        loader: "null-loader",
+      }
+    })
+    actions.replaceWebpackConfig(config)
   }
 };

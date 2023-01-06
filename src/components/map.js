@@ -5,7 +5,7 @@ import Search from './search';
 import Response from '../components/response';
 
 let MapboxGl = null;
-const apiCallNullMessage = 'http://159.89.238.220/v1/autocomplete?text='
+const apiCallNullMessage = 'http://159.89.238.220/v2/autocomplete?text='
 const responseNullMessage = '{}'
 
 class Map extends React.Component {

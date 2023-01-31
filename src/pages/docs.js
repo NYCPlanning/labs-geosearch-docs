@@ -34,7 +34,7 @@ const AboutPage = () => (
       <p>All GeoSearch requests share the same format:</p>
 
       <JSONPretty className="" json={
-  `https://geosearch.planninglabs.nyc/v1/search?text=120 broadway
+  `https://geosearch.planninglabs.nyc/v2/search?text=120 broadway
   \\______/\\________________________/\\__/\\____/\\________________/
      |               |               /     \\           |
    scheme         domain       version     path      query
@@ -49,14 +49,14 @@ const AboutPage = () => (
 
       <h2 className="header-xlarge"><a href="#search" className="header-link" className="header-link">Search <FontAwesome name='link' /></a></h2>
       <p>Search only requires one parameter, the text you want to match in an address or place name. Just build a query where the <code>text</code> parameter is set to the place you want to find.</p>
-      <blockquote><a href="https://geosearch.planninglabs.nyc/v1/search?text=120 Bro" target="_blank">https://geosearch.planninglabs.nyc/v1/search?text=120 Bro</a></blockquote>
+      <blockquote><a href="https://geosearch.planninglabs.nyc/v2/search?text=120 Bro" target="_blank">https://geosearch.planninglabs.nyc/v2/search?text=120 Bro</a></blockquote>
       <p>The example above returns a GeoJSON file containing the best matching results for the text <code>120 Bro</code>. You’ll find the name of each matched locations in a property named <code>label</code>.</p>
       <p>Spelling matters, but not capitalization. You can type <code>broadway</code>, <code>Broadway</code>, or even <code>bRoAdWaY</code>.</p>
 
       <h3 className="header-medium">Results count</h3>
       <p>By default, the <code>/search</code> endpoint return 10 places. If you want a different number of results, set the <code>size</code> parameter to the desired number.</p>
-      <blockquote><a href="https://geosearch.planninglabs.nyc/v1/search?text=120 Bro&size=1" target="_blank">https://geosearch.planninglabs.nyc/v1/search?text=120 Bro&size=1</a></blockquote>
-      <blockquote><a href="https://geosearch.planninglabs.nyc/v1/search?text=120 Bro&size=25" target="_blank">https://geosearch.planninglabs.nyc/v1/search?text=120 Bro&size=25</a></blockquote>
+      <blockquote><a href="https://geosearch.planninglabs.nyc/v2/search?text=120 Bro&size=1" target="_blank">https://geosearch.planninglabs.nyc/v2/search?text=120 Bro&size=1</a></blockquote>
+      <blockquote><a href="https://geosearch.planninglabs.nyc/v2/search?text=120 Bro&size=25" target="_blank">https://geosearch.planninglabs.nyc/v2/search?text=120 Bro&size=25</a></blockquote>
 
       <h3 className="header-medium">Other parameters</h3>
       <p>Since GeoSearch data is specific to New York City, not <a href="https://github.com/pelias/documentation/blob/master/search.md#available-search-parameters" target="_blank"><strong>all parameters available in Pelias</strong></a> work the same. However, there are some other parameters that might be used to refine your search:</p>
@@ -76,7 +76,7 @@ const AboutPage = () => (
 
       <p>To build a query with autocomplete, you need a <code>text</code> parameter, representing what a user has typed into your application.</p>
 
-      <blockquote><a href="https://geosearch.planninglabs.nyc/v1/autocomplete?text=120 Bro" target="_blank">https://geosearch.planninglabs.nyc/v1/autocomplete?text=120 Bro</a></blockquote>
+      <blockquote><a href="https://geosearch.planninglabs.nyc/v2/autocomplete?text=120 Bro" target="_blank">https://geosearch.planninglabs.nyc/v2/autocomplete?text=120 Bro</a></blockquote>
 
       <h3 className="header-medium">Local focus</h3>
       <p>The <code>/autocomplete</code> endpoint can promote nearby results to the top of the list, while still allowing matches from farther away to be visible.</p>
@@ -84,10 +84,10 @@ const AboutPage = () => (
       <p>To focus your search based upon a geographical area, such as the center of the user's map or at the device's GPS location, supply the parameters <code>focus.point.lat</code> and <code>focus.point.lon</code>. This boosts locally relevant results higher.</p>
 
       This query for <code>100 Broadway</code> returns Manhattan first:
-      <blockquote><a href="https://geosearch.planninglabs.nyc/v1/autocomplete?text=100 East Broadway" target="_blank">https://geosearch.planninglabs.nyc/v1/autocomplete?text=100 East Broadway</a></blockquote>
+      <blockquote><a href="https://geosearch.planninglabs.nyc/v2/autocomplete?text=100 East Broadway" target="_blank">https://geosearch.planninglabs.nyc/v2/autocomplete?text=100 East Broadway</a></blockquote>
 
       And this query for <code>100 Broadway</code> returns Staten Island first:
-      <blockquote><a href="https://geosearch.planninglabs.nyc/v1/autocomplete?text=100 East Broadway&focus.point.lat=40.5693781&focus.point.lon=-74.1322297" target="_blank">https://geosearch.planninglabs.nyc/v1/autocomplete?text=100 East Broadway&focus.point.lat=40.5693781&focus.point.lon=-74.1322297</a></blockquote>
+      <blockquote><a href="https://geosearch.planninglabs.nyc/v2/autocomplete?text=100 East Broadway&focus.point.lat=40.5693781&focus.point.lon=-74.1322297" target="_blank">https://geosearch.planninglabs.nyc/v2/autocomplete?text=100 East Broadway&focus.point.lat=40.5693781&focus.point.lon=-74.1322297</a></blockquote>
 
       <h3 className="header-medium">User Experience</h3>
       <p>There are pitfalls to watch out for when implementing a client-side typeahead solution:</p>

@@ -1,8 +1,7 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "labs-geosearch-docs",
+  "description": "Documentation site for NYC Department of City Planning Geosearch API",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "anchorate": "^1.1.0",
     "foundation-sites": "^6.4.1",
@@ -30,6 +29,10 @@
     "react-sticky": "^6.0.1",
     "react-typography": "^0.16.18",
     "typography": "^0.16.18"
+  },
+  "engines": {
+    "node": "^12.*",
+    "npm": "^6.*"
   },
   "keywords": [
     "gatsby"
